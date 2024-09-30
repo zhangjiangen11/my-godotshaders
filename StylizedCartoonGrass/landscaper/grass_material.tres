@@ -3,6 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://vfgl4nian7t8" path="res://landscaper/terrain_texture.png" id="1_1mdot"]
 [ext_resource type="Shader" path="res://landscaper/grass_shader.gdshader" id="1_5kvm2"]
 [ext_resource type="Texture2D" uid="uid://be7i4tf1y3a6v" path="res://landscaper/grass_texture.png" id="2_7gx8c"]
+[ext_resource type="Texture2D" uid="uid://m77kx8np7uxw" path="res://landscaper/default_grass_v0.svg" id="4_ktpq3"]
+[ext_resource type="Texture2D" uid="uid://cciwddrj8g86g" path="res://landscaper/default_grass_v1.svg" id="5_l82ry"]
+[ext_resource type="Texture2D" uid="uid://75v3htafttix" path="res://landscaper/default_grass_v2.svg" id="6_cl3p8"]
 
 [sub_resource type="Gradient" id="Gradient_86gnx"]
 
@@ -10,15 +13,6 @@
 gradient = SubResource("Gradient_86gnx")
 fill_from = Vector2(0, 1)
 fill_to = Vector2(0, 0)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_aj2jj"]
-load_path = "res://.godot/imported/default_grass_v0.svg-79c5364d0fc8f1dc04f5ebb4dd0085e9.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vepvl"]
-load_path = "res://.godot/imported/default_grass_v1.svg-b44ccd7b5b2ec89e5cb05c252d5ca28c.s3tc.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kcuy8"]
-load_path = "res://.godot/imported/default_grass_v2.svg-1f590523d093aabb315eef4a33020778.s3tc.ctex"
 
 [resource]
 render_priority = 0
@@ -31,4 +25,4 @@ shader_parameter/world_position = Vector2(0.5, 0.5)
 shader_parameter/grass_color = ExtResource("2_7gx8c")
 shader_parameter/terrain_color = ExtResource("1_1mdot")
 shader_parameter/gradient_mask = SubResource("GradientTexture2D_mfo8e")
-shader_parameter/variants = Array[Texture2D]([SubResource("CompressedTexture2D_aj2jj"), SubResource("CompressedTexture2D_vepvl"), SubResource("CompressedTexture2D_kcuy8"), null])
+shader_parameter/variants = Array[Texture2D]([ExtResource("4_ktpq3"), ExtResource("5_l82ry"), ExtResource("6_cl3p8"), null])
